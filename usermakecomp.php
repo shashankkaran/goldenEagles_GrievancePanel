@@ -12,7 +12,7 @@ $subcat=$_POST['subcategory'];
 $nature=$_POST['nature'];
 $comp=$_POST['comp'];
 $date= date("F j, Y, g:i a"); 
-
+$name=$_POST['name'];
 
 $servername='localhost';
 $username='root';
@@ -31,12 +31,12 @@ if($conn)
 		while($row=mysqli_fetch_assoc($result))
 		{
 			$user=$row['user'];
-		}
+			$id=$row['id'];		}
 	}	
 	
 	$pend='1';
-	$query2="INSERT INTO `complaints`(`user`, `category`, `subcategory`, `nature`, `comp`, `pending`, `date`) VALUES 
-	('$user','$cat','$subcat','$nature','$comp','$pend','$date')";
+	$query2="INSERT INTO `complaints`(`user`, `category`, `subcategory`, `nature`, `comp`, `pending`, `date`, `name`) VALUES 
+	('$user','$cat','$subcat','$nature','$comp','$pend','$date','$name')";
 
 	$result=mysqli_query($conn,$query2);
 		
