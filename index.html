@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+
+  <title>Grievance Portal</title>
+  <style>
+        .two{
+            background: linear-gradient(rgba(32, 30, 30, 0.4),rgba(44, 42, 42, 0.8)),url(complaints\(1\).jpg);
+            width: 100%;
+            height:100%;
+            
+          position: absolute;
+            background-size: cover;
+            opacity: 280%;
+        }
+        .white-section
+        {
+            color: aliceblue;
+        }
+        .btn1{
+            background-color: white;
+            border-radius: 8px ;
+            color: red;
+            border:2px solid red;
+            padding-left: 15px;
+            padding-right: 15px;
+           
+            
+        }
+        .btn2{
+            background-color: white;
+            border-radius: 8px ;
+            color:green;
+            border:2px solid green;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .nav-link{
+            color: white;
+            font-family: monospace;
+            font-size: 20px;
+            float: inline-end;
+        }
+        
+  
+  </style>
+		<script>
+			function myfun()
+			{
+				var guidebutton=document.getElementById("butn");
+				var guidelines=document.getElementById('guidelines');
+				if(guidebutton.value=="Click to see guidelines")
+				{
+				
+					guidelines.style.display='block';
+					guidebutton.value='Click to Hide guidelines';
+				}
+				else if(guidebutton.value=="Click to Hide guidelines")
+				{
+			
+					guidelines.style.display='none';
+					guidebutton.value='Click to see guidelines';
+				}
+			}
+		</script>
+	
+</head>
+<body>
+    <section class="one">
+        <nav class="navbar-nav navbar-expand-sm bg-dark">
+            <div class="nav-item item1" style="margin-left:5%">
+                    <h2 onclick='window.location.reload();' style="cursor:pointer">Student Grievance Portal</h2>
+            </div>
+            <div class="nav-item items" >
+                    <a class="nav-link" href="userlogin1.html">Login</a>
+            </div>
+                <div class="nav-item items">
+                    <a class="nav-link" href="userreg1.html">Registration</a>
+            </div>
+                <div class="nav-item items">
+                    <a class="nav-link" href="adminlogin1.html">Admin</a>
+            </div>
+            </nav> 
+
+    </section>
+    <section class="two">
+       
+        <div class="welcome container">
+			<h3>Welcome To Online Complaint System</h3> 
+		<br>
+        <br>
+		
+		<div class="guide">
+			
+				<input type="button" class="btn btn-light btn-light" onClick="myfun()" id="butn" value="Click to see guidelines" >
+                <input type="button"  class="btn1" onclick="userreg1.html" value="Registration">
+                <input type="button" class="btn2" onclick="userlogin1.html" value="User Login">
+                
+			<div id="guidelines" style="display:none">
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item list-group-item-dark">
+						First Time ? Register Yourself !!  <button class="btn1" onclick="userreg1.html">Registration</button>
+					</li>
+					<li class="list-group-item list-group-item-dark">
+						Already Registered ? Login <button class="btn2" onclick="userlogin1.html">Login</button>
+					</li>
+					<li class="list-group-item list-group-item-dark">
+						Finished Login in ? Setup your database by giving your Details!!!
+					</li>
+					<li class="list-group-item list-group-item-dark">
+						In Complaint Section , Type out your Complaints categorised by Categories and Sub-Categories
+					</li>
+					<li class="list-group-item list-group-item-dark">
+						After writing your Complaint submit your complaint and wait for response on it. 
+					</li>
+					<li class="list-group-item list-group-item-dark">
+						You can see your complaint status on your dashboard.
+					</li>
+                    <li class="list-group-item list-group-item-dark">
+						Finished your Complaint? Want to Log Out ? Top Right corner is the Solution . 
+					</li>
+				</ul>
+			</div>
+		</div>
+        
+		</div>
+		<br /><hr />
+ 
+
+<br>
+<br>
+<br>
+<br>
+
+			<footer class="white-section" id="footer">
+                <i class="social-icon fab fa-facebook-f"></i>
+                <i class="social-icon fab fa-twitter"></i>
+                <i class="social-icon fab fa-instagram"></i>
+                <i class="social-icon fab fa-mail"></i>
+                  <p>© Copyright 2021 Grievance</p>
+                </footer>
+              
+    </section>
+
+
+
+</body>
+</html>
