@@ -606,12 +606,7 @@ if ($conn) {
 											<td>$subcate</td>
 											<td>$nat</td>
 											<td>$da</td>";
-							if ($fil == "" || $fil == '0') {
-
-								echo "<td>No file</td>";
-							} else {
-								echo "<td><a href='$fil' target='_blank'>view file</a></td>";
-							}
+							
 							echo "<td style='width:200px;'>";
 							echo $co;
 							echo "</td>
@@ -778,12 +773,7 @@ if ($conn) {
 											<td>$subcate</td>
 											<td>$nat</td>
 											<td>$da</td>";
-							if ($fil == "" || $fil == '0') {
-
-								echo "<td>No file</td>";
-							} else {
-								echo "<td><a href='$fil' target='_blank'>view file</a></td>";
-							}
+							
 							echo "<td style='width:200px;'>";
 							echo $co;
 							echo "</td>
