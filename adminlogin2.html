@@ -21,13 +21,23 @@
 	h3{
 	  font-family: monospace;
 	}
+	  
+	  #back{
+		margin:0px; 
+		width:100%;
+		height:90%;
+		background-image: url('bgadmin.jpg');
+		position : absolute;
+		opacity : 80%;
+		background-size: cover;
+		}
   </style>
 
   </head>
   <body>
   
   
-		<nav class="navbar-nav navbar-expand-sm bg-dark">
+		<nav class="navbar-nav navbar-expand-sm bg-primary">
 		<div class="nav-item item1" style="margin-left:5%">
 				<h2 onclick='window.open("index.html");' style="cursor:pointer"><b>Student Grievance System</b></h2>
 		</div>
@@ -41,19 +51,18 @@
 				<a class="nav-link" href="adminlogin1.html">ADMIN</a>
 		</div>
 		</nav>
-		<div id="pic" style="float:left;background-size:cover;position :absolute;opacity:0.7">
-			<img src="" width="100%" height="92%">
-		</div>
+		<div id="back" style="margin : 0px;"></div>
+	  
 		<div id="main" class="container" style="position:relative;">
 		 
 				
 		<div id="forum" style="width:80%;margin-left:8%;background:white;margin-top:25px;float:left; border:1px solid #81ecf5;border-radius:10px;box-shadow:2px 3px 5px 2px;">
 			<form action="adminlogin.php" method="POST"> 
 					<div style="margin:0%;">
-					<h1 style="text-align:center;border-bottom:2px solid #28a745;padding:12px;border-radius:2px;">Administration</h1>
+					<h1 style="text-align:center;border-bottom:2px solid ##61abdd5;padding:12px;border-radius:2px;">Administration</h1>
 					</div>
 					<div id="text" style="margin-left:5%;margin-right:5%;">
-					<h3 style="background:#3dea2187;border-radius:10px;padding:15px;border:1px solid #28a745;">Incorrect entry !!! Please try again
+					<h3 style="background:#61abdd;border-radius:10px;padding:15px;border:1px solid ##61abdd;">Incorrect entry !!! Please try again
 					<i class="fa fa-times-circle" style="font-size:24px;float:right;cursor:pointer;" title="Click to close this message." onclick="document.getElementById('text').style.display='none';"></i></h3>
 					</div>
 					
