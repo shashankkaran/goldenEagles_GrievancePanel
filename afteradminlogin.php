@@ -961,8 +961,8 @@ if($conn)
 			
 			</div>
 			<div id="foot" style="background-color:grey;height:80px;width:100%;float:left;margin-top:10px;text-align:center;padding:20px">
-		© 2019 Copyright:
-    <a href="https://cui.edu.pk/"> cuiwah.edu.pk</a>
+		© 2021 Copyright:
+   
 		</div>
 		
 	</body>
