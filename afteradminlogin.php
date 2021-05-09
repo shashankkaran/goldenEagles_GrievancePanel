@@ -438,7 +438,7 @@ if($conn)
 <i class="fa fa-reorder" onclick="callsh()" style="cursor:pointer;font-size:24px;margin:20px 2px 0px 20px;color:white"></i>
 		<div class="nav-item item1" style="margin-left:5%">
 		<img src="admin.png" style="border-radius:15%;margin-left:25%;float:left" width="70px" height="80px">
-				<h3  style="float:left;cursor:pointer;margin:10px 2px 0px 20px;">CS | Admin</h3>
+				<h3  style="float:left;cursor:pointer;margin:10px 2px 0px 20px;">Admin</h3>
 						
 		</div>
 				<div style="width:50%" >

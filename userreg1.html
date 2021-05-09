@@ -16,7 +16,7 @@
 			display:inline-block;
 			width:65%;
 		}
-		#back{
+/* 		#back{                                          
 			margin:0px; 
 			width:100%;
 			height:100%;
@@ -36,6 +36,13 @@
 		border-radius: 10px;
 		box-shadow: 3px 5px 20px black;
 	}
+		h2{
+		font-family: monospace !important;
+		;
+	}
+	h3{
+	  font-family: monospace;
+	}
 	
 	
 	.container h3{
@@ -48,7 +55,7 @@
 <body>
 <nav class="navbar-nav navbar-expand-sm bg-primary">
 	<div class="nav-item item1" style="margin-left:2%">
-			<h2 onclick='window.open("index.html");' style="cursor:pointer">Student Grievance portal</h2>
+			<h2 onclick='window.open("index.html");' style="cursor:pointer"><b>Student Grievance Portal</b></h2>
 	</div>
 	<div class="nav-item items" >
 			<a class="nav-link" href="userlogin1.html">Login</a>
@@ -145,7 +152,7 @@ function myfun()
 		chklname.style.display='none';
 	}
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////sdaafasfsadsadsd////////////////////////////////////////////////////////
 	var mail=document.getElementById("mail").value;
 	var chkmail=document.getElementById("chkmail");
 	var formail =new RegExp(/^[a-zA-Z0-9]+@+[a-zA-Z]+\.+[a-z]+$/);
@@ -165,7 +172,7 @@ function myfun()
 		ch3=true;
 		chkmail.style.display='none';
 	}
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////sadfsadfasfqdadas/////////////////////////////////////////////////////////
 	var pn=document.getElementById("pn").value;
 	var chkpn=document.getElementById("chkpn");
 	var forpn= new RegExp (/(^[0-9]{3})+([0-9]{8})+$/);
@@ -184,7 +191,7 @@ function myfun()
 		ch4=true;
 		chkpn.style.display='none';
 	}
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////hajhkddddddddd/////////////////////////////////////////////////////////
 	var pass=document.getElementById("pass").value;
 	var cpass=document.getElementById("cpass").value;
 	var spass=document.getElementById("match");
@@ -212,28 +219,7 @@ function myfun()
 	document.getElementById("reg").submit();
 	
 	}
-	////////////////////////////////////////////////////////////////////////////////////////////////////////
-	// var tab=document.getElementById("tab");
-	// tab.style.display='block';
-	// var efname=document.getElementById("efname");
-	// var elname=document.getElementById("elname");
-	// var ern=document.getElementById("ern");
-	// var epn=document.getElementById("epn");
-	// var email=document.getElementById("email");
-	// var epass=document.getElementById("epass");
-	// efname.innerHTML=fname;
-	// elname.innerHTML=lname;
-	// ern.innerHTML=rn;
-	// epn.innerHTML=pn;
-	// email.innerHTML=mail;
-	// epass.innerHTML=pass;
-	// efname.style.display='inline-block';
-	// elname.style.display='inline-block';
-	// ern.style.display='inline-block';
-	// epn.style.display='inline-block';
-	// email.style.display='inline-block';
-	// epass.style.display='inline-block';
-	
+//    registration khatham ho gya hai ... Abb baki ka tm log deekhlo 
 	
 	
 }

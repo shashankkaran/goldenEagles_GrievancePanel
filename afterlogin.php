@@ -557,22 +557,14 @@ if ($conn) {
 			</h4>
 			<form class="form" action="usermakecomp.php" method="POST" style="width:100%;" enctype="multipart/form-data">
 				<span id="span2">Complaint level</span>
-			
 				<select id="category" name="category" style="width:30%;border-radius:12px;height:37px;">
 					<option>University</option>
 					<option>College</option>
 					<option>Department</option>
 				</select>
 				<span id="span2" style="margin-left:20px;">Sub Level</span>
-				<input type="text" name="subcategory" style="width:30%;border-radius:5px;height:37px; border:.8px solid aqua;" placeholder="Enter a subcategory..">
-			
+				<input type="text" name="subcategory" style="width:30%;border-radius:5px;height:37px; border:.8px solid aqua;" placeholder="Please Enter a subcategory..">
 				<br /><br />
-			
-			
-				<span id="span3" style="margin-left:20px;">Name</span>
-				<input type="text" name="name" style="width:30%;border-radius:5px;height:37px; border:.8px solid aqua;" placeholder="Optional">
-				<br /><br />
-			
 				<span id="span2">Nature of Complaint</span><input type="text" name="nature" class="form-control in2" placeholder="Regarding to ...."><br />
 				<span id="span">Complaint</span>
 				<textarea name="comp" class="form-control in1" placeholder="Feel free to write. Your complaint is secure." style="height:200px;"></textarea><br />
@@ -595,7 +587,7 @@ if ($conn) {
 			$num = 0;
 			if ($result) {
 				echo "<table class='table'><tr class='tr'>";
-				echo "<th>Number</th><th>Category</th><th>Sub-Category</th><th>Nature</th><th>Date & Time</th><th>Complaints</th></tr>";
+				echo "<th>Number</th><th>Category</th><th>Sub-Category</th><th>Nature</th><th>Date & Time</th><th>File</th><th>Complaints</th></tr>";
 				$num = 0;
 				while ($row = mysqli_fetch_assoc($result)) {
 					if ($user == $row['user']) {
@@ -614,12 +606,12 @@ if ($conn) {
 											<td>$subcate</td>
 											<td>$nat</td>
 											<td>$da</td>";
-							// if ($fil == "" || $fil == '0') {
+							if ($fil == "" || $fil == '0') {
 
-							// 	echo "<td>No file</td>";
-							// } else {
-							// 	echo "<td><a href='$fil' target='_blank'>view file</a></td>";
-							// }
+								echo "<td>No file</td>";
+							} else {
+								echo "<td><a href='$fil' target='_blank'>view file</a></td>";
+							}
 							echo "<td style='width:200px;'>";
 							echo $co;
 							echo "</td>
@@ -726,7 +718,7 @@ if ($conn) {
 									$subcate = $row['subcategory'];
 									$nat = $row['nature'];
 									$da = $row['date'];
-									// $fil = $row['file'];
+									$fil = $row['file'];
 									$co = $row['comp'];
 									echo "<h5 class='tr'>											
 											Number:$num			
@@ -770,7 +762,7 @@ if ($conn) {
 				if ($result) {
 					$num = 0;
 					echo "<table class='table'><tr class='tr'>";
-					echo "<th>Number</th><th>Category</th><th>Sub-Category</th><th>Nature</th><th>Date & Time</th><th>Complaints</th></tr>";
+					echo "<th>Number</th><th>Category</th><th>Sub-Category</th><th>Nature</th><th>Date & Time</th><th>File</th><th>Complaints</th></tr>";
 					while ($row = mysqli_fetch_assoc($result)) {
 						if ($user == $row['user']) {
 							$num++;

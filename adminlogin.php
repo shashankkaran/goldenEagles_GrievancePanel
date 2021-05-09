@@ -2,7 +2,7 @@
 $name=$_POST['name'];
 $pass=$_POST['passw'];
 
-if($name==$pass)
+if($name=='admin' && $pass=='admin')
 {
 	echo "<script>window.location.assign('afteradminlogin.php');</script>";
 }

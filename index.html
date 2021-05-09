@@ -35,9 +35,15 @@
             border:2px solid red;
             padding-left: 15px;
             padding-right: 15px;
-           
             
         }
+	  h2{
+		font-family: monospace !important;
+		
+	}
+	h3{
+	  font-family: monospace;
+	}
         .btn2{
             background-color: white;
             border-radius: 8px ;
@@ -80,7 +86,7 @@
     <section class="one">
         <nav class="navbar-nav navbar-expand-sm bg-dark">
             <div class="nav-item item1" style="margin-left:5%">
-                    <h2 onclick='window.location.reload();' style="cursor:pointer">Student Grievance Portal</h2>
+                    <h2 onclick='window.location.reload();' style="cursor:pointer"><b>Student Grievance Portal</b></h2>
             </div>
             <div class="nav-item items" >
                     <a class="nav-link" href="userlogin1.html">Login</a>
@@ -104,16 +110,16 @@
 		<div class="guide">
 			
 				<input type="button" class="btn btn-light btn-light" onClick="myfun()" id="butn" value="Click to see guidelines" >
-                <a href="userreg1.html"><input type="button"  class="btn1"  value="Registration"></a>
-                <a href="userlogin1.html"> <input type="button" class="btn2"  value="User Login"></a>
+                <input type="button"  class="btn1" onclick="userreg1.html" value="Registration">
+                <input type="button" class="btn2" onclick="userlogin1.html" value="User Login">
                 
 			<div id="guidelines" style="display:none">
 				<ul class="list-group list-group-flush">
 					<li class="list-group-item list-group-item-dark">
-						First Time ? Register Yourself !!  <button class="btn1" ><a href="userreg1.html">Registration</a></button>
+						First Time ? Register Yourself !!  <button class="btn1" onclick="userreg1.html">Registration</button>
 					</li>
 					<li class="list-group-item list-group-item-dark">
-						Already Registered ? Login <button class="btn2" ><a href="userlogin1.html">Login</a></button>
+						Already Registered ? Login <button class="btn2" onclick="userlogin1.html">Login</button>
 					</li>
 					<li class="list-group-item list-group-item-dark">
 						Finished Login in ? Setup your database by giving your Details!!!
